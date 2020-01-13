@@ -1,0 +1,31 @@
+{
+    "name": "paul-vscode-snippets",
+    "displayName": "paul-vscode-snippets",
+    "description": "My personal collection of VS Code snippets",
+    "publisher": "paulredmond",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:paulredmond/vscode-snippets.git"
+    },
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "scripts": {
+        "build": "npx vsce package"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/php.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vsce": "^1.71.0"
+    }
+}

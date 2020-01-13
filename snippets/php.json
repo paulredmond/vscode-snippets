@@ -1,0 +1,77 @@
+{
+    "Public Function": {
+        "prefix": [
+            "pubf"
+        ],
+        "body": [
+            "public function $1($2)",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Protected Function": {
+        "prefix": [
+            "prof"
+        ],
+        "body": [
+            "protected function $1($2)",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Private Function": {
+        "prefix": [
+            "prif"
+        ],
+        "body": [
+            "protected function $1($2)",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Public Interface Function": {
+        "prefix": [
+            "pubif"
+        ],
+        "body": [
+            "public function $1($2);$0"
+        ]
+    },
+    "PHPUnit Test": {
+        "prefix": [
+            "test"
+        ],
+        "body": [
+            "/** @test */",
+            "public function $1()",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "PHPUnit tearDown": {
+        "prefix": ["teardown"],
+        "body": [
+            "public function tearDown(): void",
+            "{",
+            "\tparent::tearDown();",
+            "\t$0",
+            "}"
+        ]
+    },
+    "PHPUnit setUp": {
+        "prefix": [
+            "setup"
+        ],
+        "body": [
+            "public function setUp(): void",
+            "{",
+            "\tparent::setUp();",
+            "\t$0",
+            "}"
+        ]
+    }
+}
